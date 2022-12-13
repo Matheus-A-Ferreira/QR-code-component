@@ -79,6 +79,16 @@
 
       margin-top: 0rem;
     }
+    
+    .sr-only:not(:focus):not(:active) {
+      clip: rect(0 0 0 0); 
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap; 
+      width: 1px;
+    }
 
     @media (min-width:637px){
       body{
@@ -101,7 +111,7 @@
   <main class="card">
     <h1 class="sr-only">QR Card Component</h1>
     <div class="qr_code" role="figure">
-      <img src="./images\image-qr-code.png" alt="qr code" id="qr_image">
+      <img src="./images/image-qr-code.png" alt="qr code" id="qr_image">
       </div>
     <div class="text" role="heading">
       <p class="main_text">Improve your front-end skills by building projects</p>
